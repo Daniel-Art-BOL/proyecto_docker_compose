@@ -13,10 +13,13 @@ services:
 
   backend:
     build:
-      context: ./test15b
+    image: daniel426/backend-spring:latest
     container_name: backend-spring
     restart: always
     ports:
+
+
+    
       - "8090:8080"
     depends_on:
       - mysql-db
