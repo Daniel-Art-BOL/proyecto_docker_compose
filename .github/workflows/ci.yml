@@ -39,7 +39,7 @@ jobs:
     steps:
       -name: Actualizar contenedor backend
         run:|
-           C:\proyecto_docker_compose_limpio
+           cd C:\proyecto_docker_compose_limpio
            docker-compose pull backend
            docker-compose up -d backend
           
