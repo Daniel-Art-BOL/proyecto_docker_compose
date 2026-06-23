@@ -29,11 +29,11 @@ IPruebaService services;
 	
 	
 	@GetMapping(value="/sumar")
-    public String hello(
+    public Float hello(
             @RequestParam int numero1,
             @RequestParam int numero2) {
 
-        return numero1 + numero2;
+        return (float) (numero1 + numero2);
     }
 	
 	@GetMapping(value="/lista")
