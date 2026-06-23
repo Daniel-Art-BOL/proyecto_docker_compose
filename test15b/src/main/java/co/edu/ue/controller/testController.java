@@ -26,8 +26,10 @@ IPruebaService services;
 	public String hello2() {
 		return "Hola estudiantes de la 15B";
 	}
-	
-	
+	@GetMapping(value="/testcd")
+	public String testCD() {
+		return "Test CD";
+	}
 	@GetMapping(value="/sumar")
     public Float hello(
             @RequestParam int numero1,
