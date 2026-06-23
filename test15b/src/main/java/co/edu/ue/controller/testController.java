@@ -15,16 +15,21 @@ import co.edu.ue.service.IPruebaService;
 @CrossOrigin(origins = "*")
 public class testController {
 	
-	@Autowired
-	IPruebaService services;
+@Autowired
+IPruebaService services;
 	
 	@GetMapping(value="/saludar")
 	public String hello() {
 		return "Hola estudiantes de la 15B";
 	}
+	@GetMapping(value="/saludar-2")
+	public String hello2() {
+		return "Hola estudiantes de la 15B";
+	}
+	
 	
 	@GetMapping(value="/sumar")
-    public int sumar(
+    public String hello(
             @RequestParam int numero1,
             @RequestParam int numero2) {
 
