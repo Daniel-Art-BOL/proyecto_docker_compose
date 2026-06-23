@@ -31,5 +31,5 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
       - name: Contruir imagen Docker
         run: docker build -t daniel426/backend-spring:latest .
-      -name: publicar imagen Docker en dockerhub
+      - name: publicar imagen Docker en dockerhub
         run: docker push daniel426/backend-spring:latest
