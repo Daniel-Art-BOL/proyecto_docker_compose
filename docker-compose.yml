@@ -12,7 +12,6 @@ services:
       - ./mysql/init:/docker-entrypoint-initdb.d
 
   backend:
-    build:
     image: daniel426/backend-spring:latest
     container_name: backend-spring
     restart: always
@@ -24,6 +23,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/test
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: 1234
+
   frontend:
     image: daniel426/frontend:latest
     container_name: frontend-html
