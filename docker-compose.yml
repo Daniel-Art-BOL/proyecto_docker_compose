@@ -17,9 +17,6 @@ services:
     container_name: backend-spring
     restart: always
     ports:
-
-
-    
       - "8090:8080"
     depends_on:
       - mysql-db
@@ -30,7 +27,6 @@ services:
   frontend:
     image: daniel426/frontend:latest
     container_name: frontend-html
-    
     ports:
       - "8081:80"
     depends_on:

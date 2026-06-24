@@ -71,7 +71,7 @@ jobs:
     steps:
       - name: Actualizar contenedor backend-spring
         run: |
-          cd C:\proyecto_docker_compose_limpio
+          cd C:\proyecto_docker_compose_limpio\proyecto_docker_compose_limpio
           docker compose pull backend
           docker compose up -d backend
 
@@ -82,6 +82,6 @@ jobs:
     steps:
       - name: Actualizar contenedor frontend-html
         run: |
-          cd C:\proyecto_docker_compose_limpio
+          cd C:\proyecto_docker_compose_limpio\proyecto_docker_compose_limpio
           docker compose pull frontend
           docker compose up -d frontend
